@@ -1,8 +1,5 @@
 const http = require('http');
 
-const hostname = '127.0.0.1';
-const port = 3000;
-
 const server = http.createServer((req, res) => {
   // Check if the requested URL is /about
   if (req.url === '/about') {
@@ -17,6 +14,6 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(3000, () => {
+  console.log('Server running at http://localhost:3000/');
 });
